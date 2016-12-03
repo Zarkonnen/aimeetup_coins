@@ -11,7 +11,7 @@ from skimage.draw import circle_perimeter
 
 original_image = imread("data/photos/DSC08320.jpg", as_grey=True)
 
-image = rescale(original_image, 1200.0 / len(image))
+image = rescale(original_image, 1200.0 / len(original_image))
 
 edges = canny(image, sigma=0.7)
 
