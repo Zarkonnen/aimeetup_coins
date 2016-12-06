@@ -11,7 +11,7 @@ app.models.delete_all()
 for category in categories:
 	i = 0
 	for filename in os.listdir('data/'+ category):
-		if i == 5:
+		if i == 250:
 			break
 		if filename.endswith('-cropped.png'):
 			print filename
